@@ -7,10 +7,10 @@ files:
   - source: scripts/test.py
     destination: scripts/test.py
 hooks:
-  BeforeInstall:
-    - location: scripts/install_dependencies
-      timeout: 300
-      runas: root
+#   BeforeInstall:
+#     - location: scripts/install_dependencies
+#       timeout: 300
+#       runas: root
       
   AfterInstall:
     - location: scripts/unmount
